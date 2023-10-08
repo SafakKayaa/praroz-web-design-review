@@ -13,7 +13,7 @@
     url(img/1.jpg);
   background-position: center;
   background-size: cover;
-  height: 109vh;
+  /* height: 109vh; bu heighti mid ve large ekranlar için vereceğim */ 
 }
 
 .logo {
@@ -37,6 +37,7 @@ ul li a {
   font-family: Arial;
   font-weight: bold;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 ul li a:hover {
@@ -47,6 +48,9 @@ ul li a:hover {
 .searchbar {
   display: flex;
   justify-content: center;
+  width: 30%;
+  margin: auto;
+  height: 2.5rem;
 }
 
 .navbar {
@@ -54,13 +58,7 @@ ul li a:hover {
   width: 100%;
 }
 
-.searchbar {
-  width: 30%;
-  margin: auto;
-  height: 2.5rem;
-}
-
-.click {
+.input {
   border: #ff7200 1px solid;
   background: transparent;
   color: white;
@@ -72,21 +70,64 @@ ul li a:hover {
   padding: 0.6rem;
 }
 
-.search{
-  height: 2.5rem;  
+button {
+  height: 2.5rem;
   background-color: #ff7200;
   color: white;
-  border:#ff7200 2px solid;
+  border: #ff7200 2px solid;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   font-size: 1rem;
   width: 6rem;
-
+  cursor: pointer;
+  transition: 0.4s ease;
 }
-.click:focus{
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+.input:focus {
   outline: none;
 }
-.search:focus{
+.searchButton:focus {
   outline: none;
+}
 
+.content {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+span {
+  color: #ff7200;
+  font-size: 3.5rem;
+}
+
+.joinUsButton {
+  border-radius: 10px;
+  width: 9rem;
+  margin: 1rem 0;
+}
+
+.joinUsButton a {
+  text-decoration: none;
+  color: black;
+}
+
+.joinUsButton:hover {
+  background-color: white;
+}
+
+p {
+  margin-top: 1rem;
+  font-family: Arial;
+  letter-spacing: 0.04rem;
+  line-height: 1.6rem;
+}
+
+.content h1 {
+  font-family: "Times New Roman", Times, serif;
 }
