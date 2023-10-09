@@ -13,7 +13,7 @@
     url(img/1.jpg);
   background-position: center;
   background-size: cover;
-  /* height: 109vh; bu heighti mid ve large ekranlar için vereceğim */ 
+  /* height: 109vh; bu heighti mid ve large ekranlar için vereceğim */
 }
 
 .logo {
@@ -131,3 +131,67 @@ p {
 .content h1 {
   font-family: "Times New Roman", Times, serif;
 }
+
+.signUp {
+  font-size: 1rem;
+}
+
+.link a {
+  color: white;
+  text-decoration: none;
+}
+
+#loginHere {
+  background-color: white;
+  color: #ff7200;
+  border-radius: 10px;
+  width: 13rem;
+  font-size: 1.4rem;
+  margin: auto;
+  text-align: center;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  font-family: sans-serif;
+  width: 90%;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  
+}
+
+.form input {
+  margin-top: 1.5rem;
+  width: 90%;
+  border: none;
+  border-bottom: #ff7200 solid 1px;
+  background: transparent;
+  color: white;
+  padding: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+::placeholder {
+  color: rgb(204, 204, 204);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form input:focus {
+  outline: none;
+}
+
