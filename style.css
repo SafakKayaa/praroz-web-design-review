@@ -13,7 +13,6 @@
     url(img/1.jpg);
   background-position: center;
   background-size: cover;
-  /* height: 109vh; bu heighti mid ve large ekranlar için vereceğim */
 }
 
 .logo {
@@ -37,7 +36,7 @@ ul li a {
   font-family: Arial;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 ul li a:hover {
@@ -48,8 +47,6 @@ ul li a:hover {
 .searchbar {
   display: flex;
   justify-content: center;
-  width: 30%;
-  margin: auto;
   height: 2.5rem;
 }
 
@@ -68,6 +65,7 @@ ul li a:hover {
   border-right: none;
   font-size: 1rem;
   padding: 0.6rem;
+  width: 40%;
 }
 
 button {
@@ -78,7 +76,7 @@ button {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   font-size: 1rem;
-  width: 6rem;
+  width: 5rem;
   cursor: pointer;
   transition: 0.4s ease;
 }
@@ -206,10 +204,63 @@ p {
 .form .link {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  padding-top: 1rem;
+  margin-top: -0.2rem;
 }
 
-.loginWith {
-  padding: 1rem;
+#loginWith {
+  padding: 0.3rem;
   text-align: center;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.icons ion-icon {
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+  color: #ff7200;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    height: 109vh;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    margin: auto;
+    padding: 1rem;
+  }
+  .list {
+    margin: auto;
+    width: 50%;
+  }
+  .searchbar {
+    margin: auto;
+  }
+  .list ul {
+    margin-bottom: 0;
+  }
+
+  .input {
+    width: 55%;
+  }
+  .content {
+    display: flex;
+    border: solid red 1px;
+    margin: 4rem auto;
+    justify-content: space-between;
+  }
 }
