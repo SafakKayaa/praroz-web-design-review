@@ -236,7 +236,6 @@ p {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    padding: 1rem 0;
   }
 
   .logo {
@@ -259,8 +258,13 @@ p {
   }
   .content {
     display: flex;
-    border: solid red 1px;
     margin: 4rem auto;
-    justify-content: space-between;
+    
+
+  }
+  .textDiv {
+    text-align: start;
+    padding-right: 8rem;
+    margin: auto;
   }
 }
